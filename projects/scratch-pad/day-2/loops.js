@@ -12,9 +12,9 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
+  for (var i = 0; i < array.length; i++){ //loop over array
+    console.log(array[i]); //use console.log() to print arrays value using array[i]
+  }
   
   // YOUR CODE ABOVE HERE //
 }
@@ -25,10 +25,9 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  for (var i = array.length - 1; i >= 0; i--){ //looping over array in reverse 
+    console.log(array[i]); //logging array values
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -37,7 +36,7 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+  return Object.keys(object);
   
   
   
@@ -50,9 +49,9 @@ function getObjectKeys(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
+  for (var key in object){
+    console.log(key);
+  }
   
   // YOUR CODE ABOVE HERE //
 }
@@ -63,7 +62,7 @@ function printObjectKeys(object) {
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
   
-  
+  return Object.values(object); //putting object values into an array and printing the values
   
   
   // YOUR CODE ABOVE HERE //
@@ -76,6 +75,9 @@ function getObjectValues(object) {
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
   
+  for (var key in object){
+    console.log(object[key]);
+  }
   
   
   
@@ -89,7 +91,7 @@ function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
   
   
-  
+  return Object.values(object).length;
   
   // YOUR CODE ABOVE HERE //
 }
@@ -101,7 +103,10 @@ function getObjectLength(object) {
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
   
-  
+  var reversedKeys = Object.values(object).reverse(); //creating reversedKeys setting = to keys reversed
+  reversedKeys.forEach(value => { //using forEach to print values reversed to console
+   console.log(value, object[value]);
+  })
   
   
   // YOUR CODE ABOVE HERE //
