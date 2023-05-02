@@ -23,16 +23,17 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE GOES ABOVE HERE //
-}
-
-
-
-
+    var arr = [];
+    if (start < end) { 
+     for(var i = start; i <= end;i++){  //iterating over array and pushing intergers into array
+     arr.push(i);}}
+   else {for(var i = start; i >= end;i--){//iterating over array and pushing intergers into array 
+     arr.push(i);}}
+     return arr;
+     // YOUR CODE GOES ABOVE HERE //
+ }
+ 
+ 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
