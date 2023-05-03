@@ -105,8 +105,19 @@ animals.push(bird);
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+// creating an empty 
+var friends = []; // //An empty array is useful because it can hold different data types as a list
+// create a function with getRandom thattakes parameter of index
+function getRandom(index){
+return Math.floor(Math.random() * animals.length)
+}
+// push random animal + animal name to friends
+friends.push(animals[getRandom()].name); 
+// logging friends
+console.log(friends);
+// adding friends to dog & bird
+dog['friends'] = friends;
+bird['friends'] = friends;
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
