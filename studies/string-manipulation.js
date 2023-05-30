@@ -56,3 +56,5 @@
             //Usually this is a space.
             var split = str3.split(" ");
             console.log(split); // prints => [ 'New', 'Balance', 'is', 'fire!' ]
+
+            // complete
