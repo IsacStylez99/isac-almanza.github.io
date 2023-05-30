@@ -59,3 +59,5 @@
        for (var i = myStringArray.length - 1; i >= 0; i--) {
            console.log(myStringArray[i]);
        } // prints every index on the string backwards on separate lines
+
+       // complete
