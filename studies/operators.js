@@ -92,3 +92,4 @@
         return (num >= 50 ? num + 5 : num - 5);
         } // Function will add 5 if the number is greater than 50 and subtract 5 if  less than 50
         console.log(addOrSubtractFive(20)); // prints => 15
+        // complete
