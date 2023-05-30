@@ -67,4 +67,4 @@ const start2 = () => {
     console.log('starter2');
 }
 
-:)
+// complete
