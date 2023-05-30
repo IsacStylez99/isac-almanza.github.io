@@ -66,3 +66,5 @@ start2(); //Will log error because you cannot access start2 before being initial
 const start2 = () => {
     console.log('starter2');
 }
+
+:)
